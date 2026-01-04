@@ -1,0 +1,73 @@
+table bronze_patients
+	lineageTag: 59a4a6f9-2e9a-45d6-9454-909ec4820927
+	sourceLineageTag: [dbo].[bronze_patients]
+
+	column patient_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9f297d6f-2a52-418f-8237-13375fdbb2cc
+		sourceLineageTag: patient_id
+		summarizeBy: none
+		sourceColumn: patient_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 64b78979-e050-426c-b2bd-5592aacfefe0
+		sourceLineageTag: name
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column age
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 31927bb5-c41c-42d8-9196-33917c7495ce
+		sourceLineageTag: age
+		summarizeBy: none
+		sourceColumn: age
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 43625af4-260f-47ab-87d7-87f4022f7df5
+		sourceLineageTag: gender
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column department
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 67c2e58e-2cf9-40f7-b5c1-89cec403f06f
+		sourceLineageTag: department
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_date
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1339a93c-5db4-4bcd-ad7c-e568cde3b4f9
+		sourceLineageTag: admission_date
+		summarizeBy: none
+		sourceColumn: admission_date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition bronze_patients = entity
+		mode: directLake
+		source
+			entityName: bronze_patients
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

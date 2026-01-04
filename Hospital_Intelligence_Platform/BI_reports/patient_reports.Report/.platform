@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "patient_reports"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "15fd7983-1587-8770-430f-f0deb2d78524"
+  }
+}
