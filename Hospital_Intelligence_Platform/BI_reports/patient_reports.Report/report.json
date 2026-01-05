@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.69\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU12\",\"version\":{\"visual\":\"2.5.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU12",
+            "path": "BaseThemes/CY25SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "13ba6d4b04c0010ed662",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0d77c98635314882562c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":220.55384615384617,\"z\":2,\"width\":640,\"height\":500.18461538461537,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"bronze_patients.department\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(bronze_patients.patient_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bronze_patients\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"department\"},\"Name\":\"bronze_patients.department\",\"NativeReferenceName\":\"department\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"patient_id\"}},\"Function\":5},\"Name\":\"CountNonNull(bronze_patients.patient_id)\",\"NativeReferenceName\":\"Count of patient_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"patient_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Count Of Patient Id for Department'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading3'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 500.18,
+          "width": 640.00,
+          "x": 640.00,
+          "y": 220.55,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"9701e2ee8000d6db4029\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":220.55384615384617,\"z\":1,\"width\":640,\"height\":500.18461538461537,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(bronze_patients.patient_id)\"}],\"Category\":[{\"queryRef\":\"bronze_patients.admission_date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bronze_patients\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"patient_id\"}},\"Function\":5},\"Name\":\"CountNonNull(bronze_patients.patient_id)\",\"NativeReferenceName\":\"Count of patient_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"admission_date\"},\"Name\":\"bronze_patients.admission_date\",\"NativeReferenceName\":\"admission_date\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"patient_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 500.18,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 220.55,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"a7a5e2e06a52e90970db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":53.16923076923077,\"z\":0,\"width\":246.15384615384616,\"height\":88.61538461538461,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"       \",\"textStyle\":{\"fontSize\":\"20pt\",\"color\":\"#e1c233\"}},{\"value\":\" HealthCare \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\",\"color\":\"#e1c233\"}}]},{\"textRuns\":[{\"value\":\"\\t\\t\\t\\t\\t\\t\\t\",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\"Insights\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\",\"color\":\"#e1c233\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 88.62,
+          "width": 246.15,
+          "x": 0.00,
+          "y": 53.17,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c3d59567db0b874103b0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":439.1384615384615,\"y\":37.41538461538462,\"z\":3,\"width\":458.83076923076925,\"height\":183.13846153846154,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Smilekraft Maxillofacial Surgery And Dental Hospital\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"28pt\",\"color\":\"#de6a73\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 183.14,
+          "width": 458.83,
+          "x": 439.14,
+          "y": 37.42,
+          "z": 3.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
