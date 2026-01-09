@@ -108,9 +108,8 @@ Key optimizations:
 
 - CDC-based ingestion using Mirroring
 - Integration with real-time event sources
--Advanced data quality framework
-
-ML-ready feature store on Fabric
+- Advanced data quality framework
+- ML-ready feature store on Fabric
 
 12. Conclusion
 
